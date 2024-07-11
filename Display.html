@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- (display:none) jis jga b ya use hoga to wo  elements hide ho jai gy
+         (display:block) iska mtlb k wha sy line khatm kr k new line pr a jata hy
+         (b) text ko bold b kry ka or line end kr k new line pr b ay ga
+          html css ka 
+           
+     uses flex, grid
+     (display:flex): flex boxes ko row ya column m lata hy  ya responsiveness k liy use hota hy (mtlb amny samny lany k liy use hota hy) 
+             display: flex;
+            flex-direction: row;
+            gap: 1px;
+
+
+     (display:grid): grid b same flex ki tara hi kam krta hy 
+     
+             display: grid;
+            grid-template-columns: repeat(3, 1fr); iska mtlb k agr 5 pics hy to 3 first row m baqi new row m
+            gap: 10px;
+            -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        b {
+            display: block;
+        }
+
+        .count {
+            display: none;
+        }
+
+        .add {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p class="count"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> Ipsum pro
+        vident earum <b>quas sapiente consequun
+            tur, exercitationem hic nihil eius,</b> temporibus harum do
+        lorum vel! Quae eum laborum inventore nulla amet. Aspernatur, libero!
+        <p class="add"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> Ipsum pro
+        vident earum quas sapiente consequun
+        tur, <b>exercitationem hic nihil eius, temporibus harum </b>
+        lorum vel! Quae eum laborum inventore nulla amet. Aspernatur, libero!
+    </div>
+</body>
+
+</html>
