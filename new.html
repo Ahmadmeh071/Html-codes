@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- html css ka template 
+     uses flex grid
+     flex: flex boxes ko row ya column m lata hy  ya responsiveness k liy use hota hy  
+             display: flex;
+            flex-direction: row;
+            gap: 1px;
+
+
+     grid: grid b same flex ki tara hi kam krta hy 
+     
+             display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            gap: 1px;
+            width: 80%;
+            margin: auto;
+        }
+
+        .nav-bar {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            align-items: center;
+            margin-left: 550px;
+
+        }
+
+        .nav-item {
+            width: 70px;
+            color: black;
+        }
+
+        .logo {
+            font-family: "Brush Script MT", cursive;
+            font-size: large;
+            padding: 20px;
+        }
+
+        .new-container {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            margin: auto;
+            width: 80%;
+
+        }
+
+        .box img {
+            width: -webkit-fill-available;
+            height: 190px;
+        }
+
+        .service img {
+            width: 650px;
+            height: 200px;
+        }
+
+        .inner-container img {
+            margin-top: 10px;
+            width: 130px;
+            height: 76px;
+        }
+
+        h3 {
+            margin: 0 0 0 20px;
+        }
+
+        h2 {
+            margin-left: 135px;
+        }
+
+        .outer-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            height: 400px;
+
+
+        }
+
+        .box {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            width: 10px;
+            height: 10px;
+            margin-left: 130px;
+
+        }
+
+        .inner-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0px;
+            margin-left: 10px;
+
+        }
+
+        .square {
+            display: flex;
+            flex-direction: row;
+            gap: 10;
+        }
+
+        .box5 {
+
+            width: 35%;
+            height: 250px;
+            text-align: left;
+            padding-left: 140px;
+            padding-top: 40px;
+        }
+
+        .box6 {
+            width: 35%;
+            height: 250px;
+            padding-left: 140px;
+            padding-top: 40px;
+        }
+
+        b {
+            text-decoration: underline;
+        }
+
+        div.adjust {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <h1>SimpleJape</h1>
+        </div>
+
+        <nav class="nav-bar">
+
+            <div class="nav-item">Home</div>
+            <div class="nav-item">About</div>
+            <div class="nav-item">Portfolio</div>
+            <div class="nav-item">Blog</div>
+            <!-- <div class="nav-item">Contact</div> -->
+
+    </div>
+    <div class="new-container">
+        <div class="service">
+            <div>
+                <img src="./Assets/A.PNG">
+            </div>
+        </div>
+        <div>
+            <h3>Latest from the gallery </h3>
+            <div class="inner-container">
+                <div>
+                    <img src="./Assets/M.PNG">
+                </div>
+                <div>
+                    <img src="./Assets/N.PNG">
+                </div>
+                <div>
+                    <img src="./Assets/O.PNG">
+                </div>
+                <div>
+                    <img src="./Assets/P.PNG">
+                </div>
+                <div>
+                    <img src="./Assets/Q.PNG">
+                </div>
+                <div>
+                    <img src="./Assets/R.PNG">
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2>Our Best Work</h2>
+    <div class="outer-container">
+
+        <div class="box">
+
+            <div class="adjust">
+                <img src="./Assets/B.PNG">
+            </div>
+            <div class="adjust">
+                <img src="./Assets/C.PNG">
+            </div>
+            <div class="adjust">
+                <img src="./Assets/G.PNG">
+            </div>
+            <div class="adjust">
+                <img src="./Assets/E.PNG">
+            </div>
+            <div class="adjust">
+                <img src="./Assets/F.PNG">
+            </div>
+            <div class="adjust">
+                <img src="./Assets/D.PNG">
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="square">
+        <div class="box5">
+            <h4>What we do</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus officia,
+                repellendus ratione mollitia atque et consequuntur magni sint tenetur natus
+                assumenda aliquid aliquam accusamus reiciendis recusandae culpa amet cupid
+                itate repudiandae excepturi, facere dicta? Incidunt magni laudantium et, accusamus asperiores atque?
+                Quis earum tenetur nisi autem velit mollitia doloribus accusamus quidem! orem ipsum dolor <b>See
+                    more..</b></p>
+        </div>
+        <div class="box6">
+            <h4>How to Contact Us</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam esse, aut nesciunt
+                pariatur doloribus, quam itaque similique aperiam officia error dignissimos dolores minima,
+                unde debitis labore inventore officiis ipsum at fugiat necessitatibus iste corporis non accusamus
+                . Iusto error,
+                assumenda facilis quia, itaque laborum dicta quos corporis dolor nisi debitis. Iure. orem ipsum dolor
+                sit, amet consectetur adipisicing elit. Possimus officia, <b>See more..
+
+                </b>
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>

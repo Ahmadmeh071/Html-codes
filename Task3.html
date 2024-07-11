@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/f1b0d1daba.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0;
+
+        }
+
+        .outer-navbar {
+            background-color: blue;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            width: 80%;
+            margin: auto;
+            background-color: blue;
+
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: blue;
+
+
+        }
+
+        .active2 {
+            margin-left: 200px;
+            padding-right: 0;
+            margin-right: 0;
+
+        }
+
+        .active1 {
+            margin-left: 690px;
+            margin-right: 0;
+            padding-right: 0;
+        }
+
+
+        li {
+            display: inline-block;
+
+        }
+
+        li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding-right: 20px;
+        }
+
+        .element {
+            padding: 15px;
+            background-color: blue;
+            height: 30px;
+        }
+
+
+        .nav-bar {
+            align-items: center;
+            padding: 30px 0px 30px 30px;
+        }
+
+        .inner-navbar {
+            background-color: white;
+            position: sticky;
+            top: 0;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            width: 80%;
+            margin: auto;
+
+            background-color: white;
+
+        }
+
+        .img-size {
+            padding: 21px 5px 0px 15px;
+        }
+
+
+        input {
+            margin-left: 150px;
+            height: 40px;
+            width: 50%;
+            margin-top: 10px;
+            border: 2px hidden;
+            background-color: lightgray;
+        }
+
+
+
+        div.image-size2 {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            margin-left: 140px;
+            padding: 5px;
+            align-items: center;
+        }
+
+        .outer-container {
+
+            max-width: 100%;
+
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-size: 1500px;
+
+            color: black;
+            height: 400px;
+            width: 100%;
+            background-image: url(./Assets/F.PNG);
+
+
+        }
+
+        .size {
+            margin-left: 725px;
+            color: white;
+            text-align: right;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #004dda;
+            color: white;
+            font-weight: bold;
+            border: 1px solid #004dda;
+            border-radius: 3px;
+            margin-top: 20px;
+        }
+
+        h1,
+        p {
+            margin: 4px;
+        }
+
+        .inner-container {
+            display: flex;
+            flex-direction: row;
+            gap: 0px;
+
+        }
+
+        .box5 {
+            height: 300px;
+            width: 420px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-repeat: no-repeat;
+            margin-top: 20px;
+            background-size: 500px;
+            color: white;
+            height: 300px;
+            width: 32%;
+            background-image: url(./Assets/6.jpeg);
+
+        }
+
+        .box6 {
+            height: 300px;
+            width: 420px;
+            margin-left: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-repeat: no-repeat;
+            margin-left: 25px;
+            background-size: 500px;
+            color: white;
+            margin-top: 20px;
+            height: 300px;
+            width: 32%;
+            background-image: url(./Assets/5.jpeg);
+        }
+
+        .box7 {
+            /* margin-left: 100px; */
+            height: 300px;
+            width: 420px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-repeat: no-repeat;
+            margin-left: 25px;
+            margin-top: 20px;
+            background-size: 500px;
+            color: white;
+            height: 300px;
+            width: 32%;
+            background-image: url(./Assets/6.jpeg);
+
+        }
+
+        h3 {
+            margin-top: 0;
+        }
+
+        h2 {
+            font-weight: bold;
+        }
+
+        span h1 {
+            text-align: center;
+            padding-top: 30px;
+
+            font-size: xx-large;
+        }
+
+        span p {
+            text-align: center;
+            font-size: larger;
+            margin-bottom: 20px;
+        }
+
+        .out-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            width: 80%;
+            margin: auto;
+        }
+
+        .style1 {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 60px;
+        }
+
+        .out-container img {
+            height: 240px;
+            width: 260px;
+        }
+
+        .another-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            width: 80%;
+            margin: auto;
+        }
+
+        .another-container img {
+            height: 240px;
+            width: 260px;
+        }
+
+
+        .blog-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0px;
+            padding-top: 50px;
+        }
+
+        .two-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 0PX;
+            margin-right: 150px;
+            margin-left: 30px;
+
+        }
+
+        .setbox {
+            margin-left: 20px;
+            padding: 0px;
+        }
+
+        .three-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 0PX;
+            margin-left: 140px;
+
+        }
+
+        .notbox {
+            margin-left: 20px;
+            padding: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer-navbar">
+        <div class="container">
+            <div class="element">
+                <img src="./Assets/q1-removebg-preview.png" height="60px">
+            </div>
+            <ul class="nav-bar">
+                <div>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">PAGES</a></li>
+                    <li><a href="">EXTRA PAGES</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">BUY TEMPLATE</a></li>
+                    <li class="active2"><a href="">Need Help?</a></li>
+                    <li class="active1"><a href="">+94 23-23-221</a></li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="inner-navbar">
+        <div class="main-container">
+            <div class="img-size">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <h5>CATEGORIES</h5>
+            <input type="text" id="">
+            <div class="img-size1">
+                <i class="fa-solid fa-magnifying-glass"
+                    style="background-color: lightgray;height: 32px ; margin: 10px -5px; padding-top: 10px;padding-right: 10px;"></i>
+            </div>
+            <div class="image-size2">
+                <i class="fa-regular fa-circle-user"></i>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+        </div>
+    </div>
+    <div class="outer-container">
+        <div class="box">
+            <div class="size">
+                <h1>ATTACK AIR</h1>
+                <h1>MAX 720 SAGE LOW</h1>
+                <p>Limited items available at this price</p>
+                <button>Shop Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="inner-container">
+        <div class="box5">
+            <h2>Men's Collection</h2>
+        </div>
+        <div class="box6">
+            <h2>Women's Collection</h2>
+        </div>
+        <div class="box7">
+            <h2>Kid's Collection</h2>
+
+        </div>
+    </div>
+    <div class="in-container">
+        <span>
+            <h1>Top Selling</h1>
+        </span>
+        <span>
+            <p>Cum doctus cicibus efficiantur in imperdiet deterruisset</p>
+        </span>
+    </div>
+    <div class="out-container">
+        <div>
+            <img src="./Assets/t1.PNG">
+            <div class="style1">
+                Armor Air Alpha
+                <h3 style="color: #004dda;;">$110</h3>
+            </div>
+        </div>
+        <div>
+            <img src="./Assets/t2.PNG">
+            <div class="style1">
+                Armor Air Alpha
+                <h3 style="color: #004dda;;">$130</h3>
+            </div>
+        </div>
+        <div>
+            <img src="./Assets/t3.PNG">
+            <div class="style1">
+                Armor Air Alpha
+                <h3 style="color: #004dda;;">$170</h3>
+            </div>
+        </div>
+        <div>
+            <img src="./Assets/t4.PNG">
+            <div class="style1">
+                Armor Air Alpha
+                <h3 style="color: #004dda;;">$100</h3>
+            </div>
+        </div>
+        <div>
+            <img src="./Assets/t5.PNG">
+            <div class="style1">
+                Armor Air Alpha
+                <h3 style="color: #004dda;;">$130</h3>
+            </div>
+        </div>
+        <div>
+            <img src="./Assets/t6.PNG">
+            <div class="style1">
+                Armor Air Alpha
+                <h3 style="color: #004dda;;">$90</h3>
+            </div>
+        </div>
+        <div>
+            <img src="./Assets/t7.PNG">
+            <div class="style1">
+                Armor Air Alpha
+                <h3 style="color: #004dda;;">$80</h3>
+            </div>
+        </div>
+        <div>
+            <img src="./Assets/t8.PNG">
+            <div class="style1">
+                Armor Air Alpha
+                <h3 style="color: #004dda;;">$150</h3>
+            </div>
+        </div>
+    </div>
+    <div class="one-container">
+        <span>
+            <h1>Featured</h1>
+        </span>
+        <span>
+            <p>Cum doctus cicibus efficiantur in imperdiet deterruisset</p>
+        </span>
+    </div>
+    <div class="another-container">
+        <div>
+            <img src="./Assets/s1.PNG">
+            <div class="style1">
+                Armor Air Alpha
+                <h3 style="color: #004dda;;">$120</h3>
+            </div>
+        </div>
+        <div>
+            <img src="./Assets/s2.PNG">
+            <div class="style1">
+                Armor Air Alpha
+                <h3 style="color: #004dda;;">$180</h3>
+            </div>
+        </div>
+        <div>
+            <img src="./Assets/s3.PNG">
+            <div class="style1">
+                Armor Air Alpha
+                <h3 style="color: #004dda;;">$130</h3>
+            </div>
+        </div>
+        <div>
+            <img src="./Assets/s4.PNG">
+            <div class="style1">
+                Armor Air Alpha
+                <h3 style="color: #004dda;;">$150</h3>
+            </div>
+        </div>
+    </div>
+    <div class="one-container">
+        <span>
+            <h1>Latest News</h1>
+        </span>
+        <span>
+            <p>Cum doctus cicibus efficiantur in imperdiet deterruisset</p>
+        </span>
+    </div>
+    <div class="blog-container">
+        <div class="three-container">
+            <div>
+                <img src="./Assets/p1.PNG">
+            </div>
+            <div class="notbox">
+                <p>By Mark Twain - 20.11.2017</p>
+                <h2>Pri opertere screbenter eu</h2>
+                <p>Lorem ipsum dolor sit amet consectetur
+                    saepe doloremque</p>
+            </div>
+        </div>
+        <div class="two-container">
+            <div>
+                <img src="./Assets/p2.PNG">
+            </div>
+            <div class="setbox">
+                <p>By Mark Twain - 20.11.2017</p>
+                <h2>Pri opertere screbenter eu</h2>
+                <p>Lorem ipsum dolor sit amet consectetur
+                    saepe doloremque</p>
+            </div>
+        </div>
+        <div class="three-container">
+            <div>
+                <img src="./Assets/p3.PNG">
+            </div>
+            <div class="notbox">
+                <p>By Mark Twain - 20.11.2017</p>
+                <h2>Pri opertere screbenter eu</h2>
+                <p>Lorem ipsum dolor sit amet consectetur
+                    saepe doloremque</p>
+            </div>
+        </div>
+        <div class="two-container">
+            <div>
+                <img src="./Assets/p4.PNG">
+            </div>
+            <div class="setbox">
+                <p>By Mark Twain - 20.11.2017</p>
+                <h2>Pri opertere screbenter eu</h2>
+                <p>Lorem ipsum dolor sit amet consectetur
+                    saepe doloremque</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
